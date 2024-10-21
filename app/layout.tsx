@@ -1,4 +1,6 @@
 import '@styles/globals.css';
+import Nav from '@components/Nav';
+import Provider from '@components/Provider';
 
 interface LayoutProps {
     children: React.ReactNode;
@@ -19,6 +21,7 @@ const Rootlayout:React.FC<LayoutProps> = ({children}) => {
                 </div>
 
                 <div className="app">
+                    <Nav/>
                     {children}
                 </div>
             </div>
